@@ -1,0 +1,26 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{
+	float basic_salary, gross_salary, HRA, DA;
+	cout<<"Enter basic salary of Employee : ";
+	cin>>basic_salary;
+
+	if (basic_salary<10000)
+	{
+		HRA=0.23*basic_salary;
+		DA=0.80*basic_salary;
+	}
+	else
+	{	
+		HRA=900;
+		DA=0.99*basic_salary;
+	}
+
+	gross_salary=basic_salary+HRA+DA;
+	cout<<"Gross salary is : "<<gross_salary;
+
+	
+	return 0;
+}
